@@ -17,13 +17,15 @@ To run unit-test after  build
 ctest
 ```
 
+If you build this on Windows, you may need [dirent](https://github.com/tronkko/dirent).
+
 ## USAGE:
 The executable takes a config and a path as its inputs.
 ```bash
 executable test/config_1.txt test/unit_1
 ```
 
-The config file specifies a regex to match files in the given path and another regex for matching the line format in files. Please see examples in [config](config) folder.
+The config file specifies a regex to match files in the given path and another regex for matching the line format in files. Please see examples in test folder.
 
 To utilize streaming-percentiles, where epsilon is a float point value between 0 and 1.
 ```bash
