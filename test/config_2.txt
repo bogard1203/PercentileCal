@@ -1,0 +1,18 @@
+# The below define the file expression with FILE_REGEX keyword followed by regular expression
+
+FILE_REGEX=.*\.log
+
+# Here is LINE regular expression definition with grouping
+# Refer to the format of http://www.cplusplus.com/reference/regex/ECMAScript/
+# Application uses std::regex_match so the regex should cover the whole line in order to hit the match
+# Below is for a line in format: 64 bytes from 127.0.0.1: icmp_seq=0 ttl=63 time=1.684 ms
+
+LINE_REGEX=.*time=(\d+(.\d+)?)\sms
+
+# Define the group id of LINE_REGES as input value
+
+GROUPID=1
+
+# list percentiles
+
+PERCENTILE=0.9 0.95

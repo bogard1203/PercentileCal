@@ -1,0 +1,18 @@
+# The below define the file expression with FILE_REGEX keyword followed by regular expression
+
+FILE_REGEX=.*\.log
+
+# Here is LINE regular expression definition with grouping
+# Refer to the format of http://www.cplusplus.com/reference/regex/ECMAScript/
+# Application uses std::regex_match so the regex should cover the whole line in order to hit the match
+# Below is for a line in format: 10 5 2229 zero: 0
+
+LINE_REGEX=(\d+)\s(\d+)\s(\d+)\szero:\s(\d+)
+
+# Define the group id of LINE_REGES as input value
+
+GROUPID=3
+
+# list percentiles
+
+PERCENTILE=0.99
